@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400,700&family=Roboto:wght@300;500&display=swap");
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+main, footer, header, aside, div, section, nav {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+.title-sm, .title-lg {
+  line-height: 1.5;
+}
+
+.title-sm {
+  font-size: 1.125rem;
+}
+
+.title-lg {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.navigation {
+  background-color: #000;
+}
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-logo {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.navigation-list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation-list-item {
+  font-size: 0.875rem;
+  color: #bbb;
+  transition: 0.3s ease-in-out;
+}
+.navigation-list-item:hover {
+  color: #ffffff;
+}
+
+.footer {
+  height: 30vh;
+  background-color: #444;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.feed-container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+}
+.feed-post-intro {
+  color: #777;
+  font-weight: 300;
+}
+
+.post {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+.post-lg {
+  max-width: 60rem;
+}
+.post-container {
+  display: flex;
+  justify-content: center;
+}
+.post-image {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.post-image img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.post-image img:hover {
+  transform: scale(1.2) rotate(3deg);
+}
+.post-image-lg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post-header-lg {
+  padding: 3rem;
+}
+.post-meta {
+  display: flex;
+}
+.post-meta-item {
+  align-items: center;
+  margin-right: 20px;
+  font-size: 0.875rem;
+  color: #555555;
+}
+.post-meta-item i {
+  color: #900;
+  margin-right: 5px;
+}
+.post-meta-item a {
+  color: #555555;
+}
+.post-intro {
+  font-weight: 500;
+}
+.post-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post-content-lg {
+  padding: 3rem 5rem;
+}
+.post-content {
+  color: #777777;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,83 @@
+
+//  =====================================================
+//        BLOG POSTS AND FEED STYLING
+//  =====================================================
+
+.feed
+	display: flex
+	flex-direction: column
+	gap: 3rem
+	&-container
+		display: grid
+		grid-template-columns: 1fr 300px
+		gap: 4rem
+	&-post-intro
+		color: #777
+		font-weight: 300
+				
+.post
+	border-radius: 5px
+	background-color: #ffffff
+	border: 1px solid #ccc
+	padding: 2px
+	&-lg
+		max-width: 60rem
+	&-container
+		display: flex
+		justify-content: center
+	&-image
+		height: 300px
+		position: relative
+		overflow: hidden
+		border-radius: 5px
+		img
+			position: relative
+			z-index: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: .3s ease-in-out
+			&:hover
+				transform: scale(1.2) rotate(3deg)
+		&-lg
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+	
+	&-header
+		display: flex
+		flex-direction: column
+		gap: 1rem
+		&-lg
+			padding: 3rem
+
+	&-meta
+		display: flex
+		&-item
+			align-items: center
+			margin-right: 20px
+			font-size: .875rem
+			color: #555555
+			i
+				color: #900
+				margin-right: 5px
+			a
+				color: #555555
+	&-intro
+		font-weight: 500
+		
+	&-content
+		padding: 2rem
+		display: flex
+		flex-direction: column
+		gap: 1rem
+		&-lg
+			padding: 3rem 5rem
+	&-content
+		color: #777777
+
+
+
+
+

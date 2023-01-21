@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block content %}
+	<div class="container feed-container">
+		<section class="feed">
+			{% for post in posts %}
+				<a href="{{ url_for('blog_post', slug=post.slug) }}">
+					<article class="post">
+						<figure class="post-image">
+							<img src="{{ post.image }}" alt="">
+						</figure>
+						<main class="post-content">
+							<header class="post-header">
+								<section class="post-meta">
+									<div class="post-meta-item">
+										<i class="fa-solid fa-user" title="Author"></i>
+										<span>Admin</span>
+									</div>
+									<div class="post-meta-item">
+										<i class="fa-solid fa-calendar" title="Publish Date"></i>
+										<span>April 20, 2022</span>
+									</div>
+									<div class="post-meta-item">
+										<i class="fa-solid fa-comment" title="Comments"></i>
+										{% if post.comments %}
+											<span>{{ post.comments|length }}</span>
+										{% else %}
+											<span>0</span>
+										{% endif %}
+									</div>
+									<div class="post-meta-item">
+										<i class="fa-solid fa-share-nodes" title="Share this post"></i>
+									</div>
+								</section>
+								<h1 class="title-sm">
+									{{ post.title }}
+								</h1>
+							</header>
+							<section>
+								{{ post.intro | safe }}
+							</section>
+						</main>
+					</article>
+				</a>
+			{% endfor %}
+		</section>
+		<aside class="right-column">
+			<article>
+				<h1 style="padding: 1rem;text-align: center;background-color: #333; color: #fff;">Test Header</h1>
+			</article>
+		</aside>
+	</div>
+{% endblock %}
