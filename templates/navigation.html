@@ -1,8 +1,9 @@
 <nav id="navigation" class="navigation">
-	<div class="container navigation-container"><a href="{{ url_for('home') }}" class="navigation-logo">Some Logo</a>
+	<div class="container navigation-container">
+		<a href="{{ url_for('blog_feed') }}" class="navigation-logo">Iam<i>Jesco</i></a>
 		<ul class="navigation-list">
-			<li><a href="{{ url_for('about') }}" class="navigation-list-item">About</a></li>
 			<li><a href="{{ url_for('blog_feed') }}" class="navigation-list-item">Blog</a></li>
+			<li><a href="{{ url_for('about') }}" class="navigation-list-item">About</a></li>
 			<li><a href="{{ url_for('contact') }}" class="navigation-list-item">Contact</a></li>
 		</ul>
 	</div>

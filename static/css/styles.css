@@ -94,6 +94,29 @@ main, footer, header, aside, div, section, nav {
   padding: 1rem;
 }
 
+.page-header {
+  height: 50vh;
+  background: url("../images/main-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.page-header-title {
+  position: relative;
+  z-index: 5;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent, #000);
+}
+
 body {
   background-color: #cccccc;
 }
@@ -124,7 +147,7 @@ p {
 }
 
 .navigation {
-  background-color: #000;
+  background-color: #ffffff;
 }
 .navigation-container {
   display: flex;
@@ -132,25 +155,38 @@ p {
   align-items: center;
 }
 .navigation-logo {
-  color: #fff;
+  color: #333333;
   font-size: 1.25rem;
+  padding: 1rem 0;
+}
+.navigation-logo i {
+  font-style: italic;
+  color: #C25233;
 }
 .navigation-list {
   display: flex;
   gap: 2rem;
 }
 .navigation-list-item {
-  font-size: 0.875rem;
-  color: #bbb;
+  font-size: 1rem;
+  color: #333333;
   transition: 0.3s ease-in-out;
 }
 .navigation-list-item:hover {
-  color: #ffffff;
+  color: #C25233;
 }
 
 .footer {
   height: 30vh;
   background-color: #444;
+}
+
+.right-column-profile {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.right-column-profile img {
+  width: 100%;
 }
 
 .feed {

@@ -1,6 +1,6 @@
 
 .navigation
-	background-color: #000
+	background-color: #ffffff
 	
 	&-container
 		display: flex
@@ -8,16 +8,20 @@
 		align-items: center
 		
 	&-logo
-		color: #fff
+		color: #333333
 		font-size: 1.25rem
+		padding: 1rem 0
+		i
+			font-style: italic
+			color: $main-orange-color
 		
 	&-list
 		display: flex
 		gap: 2rem
 		
 	&-list-item
-		font-size: .875rem
-		color: #bbb
+		font-size: 1rem
+		color: #333333
 		transition: .3s ease-in-out
 		&:hover
-			color: #ffffff
+			color: $main-orange-color

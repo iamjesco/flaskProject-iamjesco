@@ -1,6 +1,10 @@
 {% extends 'index.html' %}
 
 {% block content %}
+	<section class="page-header">
+		<div class="overlay"></div>
+		<h1 class="page-header-title">Some twisted thoughts</h1>
+	</section>
 	<div class="container feed-container">
 		<section class="feed">
 			{% for post in posts %}
@@ -45,9 +49,7 @@
 			{% endfor %}
 		</section>
 		<aside class="right-column">
-			<article>
-				<h1 style="padding: 1rem;text-align: center;background-color: #333; color: #fff;">Test Header</h1>
-			</article>
+			{% include "right-column.html" %}
 		</aside>
 	</div>
 {% endblock %}
